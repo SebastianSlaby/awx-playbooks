@@ -1,7 +1,0 @@
----
-# tasks file for install-packages
-- name: Install vim
-  become: yes
-  yum:
-          name: "vim"
-          state: latest
