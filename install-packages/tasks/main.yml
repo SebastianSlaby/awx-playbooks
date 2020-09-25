@@ -1,0 +1,6 @@
+---
+# tasks file for install-packages
+- name: Install vim
+  yum:
+          name: "vim"
+          state: latest
