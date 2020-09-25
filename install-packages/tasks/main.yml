@@ -1,6 +1,7 @@
 ---
 # tasks file for install-packages
 - name: Install vim
+  hosts: all
   become: yes
   yum:
           name: "vim"
