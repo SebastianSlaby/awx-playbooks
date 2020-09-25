@@ -1,5 +1,5 @@
 ---
-- name: Install packages
-  hosts: '{{ target }}'
-  roles:
-          - { role: install-packages }
+ - name: Install packages
+   hosts: '{{ target }}'
+   roles:
+           - { role: install-packages }
