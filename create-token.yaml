@@ -1,0 +1,5 @@
+---
+ - name: Create token
+   hosts: localhost
+   roles:
+           - { role: create_bds_token}
