@@ -1,16 +1,17 @@
-#!/usr/bin/python
+#!python
 import urllib3
 from getpass import getpass
 import json
 
 
-token=getpass("Token: ")
+#token=getpass("Token: ")
 token = "Br5r9d8Fu6UotyJTPh490YmuL5iDqA"
 urllib3.disable_warnings()
 http = urllib3.PoolManager(cert_reqs='CERT_NONE')
 
 print("Enter tower url, for example: https://ansible-tower.ocp3.sr1.eu1.sp.ibm.local ")
-tower_url = input("URL: ")
+#tower_url = input("URL: ")
+tower_url = 'http://worker3.local.net:30072'
 
 # Get list of organizations
 r = http.request('GET', '{}/api/v2/organizations/?page_size=500'.format(tower_url), headers={"Authorization": "Bearer {}".format(token)})
