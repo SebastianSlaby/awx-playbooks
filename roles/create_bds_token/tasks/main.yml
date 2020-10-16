@@ -1,0 +1,7 @@
+---
+ - name: Generate BDS token credentials for all organizations
+   hosts: localhost
+
+   tasks:
+           - name: Execute script
+             script: create_token.py
