@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import urllib3
 from getpass import getpass
 import json
